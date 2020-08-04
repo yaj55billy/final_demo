@@ -1,0 +1,26 @@
+@media (max-width: 575px) {
+  
+  .table-rwd{
+    min-width: 100%;
+  }
+
+  .table-rwd tr{
+    display: block;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+  .table-rwd td {
+    text-align: left;
+    font-size: 15px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+	}
+	.table-rwd td:before {
+    content: attr(data-th) " : ";
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+	  margin-right: 10px;
+  }
+}

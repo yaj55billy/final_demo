@@ -1,0 +1,47 @@
+
+// @mixin clearfix {
+//   &:after {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
+
+//漸層 左到右
+@mixin gradient_hori($color_1,$color_2,$color_3){
+  background: $color_2;
+  background: -moz-linear-gradient(left, $color_1, $color_2, $color_3);
+  background: -webkit-linear-gradient(left, $color_1,$color_2,$color_3);
+  background: linear-gradient(to right, $color_1,$color_2,$color_3);
+}
+  
+// //漸層 上到下
+@mixin gradient_vertical($color_1,$color_2,$color_3){
+  background: $color_2;
+  background: -moz-linear-gradient(top, $color_1, $color_2, $color_3);
+  background: -webkit-linear-gradient(top, $color_1,$color_2,$color_3);
+  background: linear-gradient(to bottom, $color_1,$color_2,$color_3);
+}
+  
+// // 文字常用set
+@mixin text_set($fz,$fw,$color){
+  font-size: $fz;
+  font-weight: $fw;
+  color: $color;
+}
+    
+// 上下左右置中
+@mixin position_middle(){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+  
+
+
+
+
